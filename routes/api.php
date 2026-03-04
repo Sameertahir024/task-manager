@@ -6,3 +6,4 @@ use App\Http\Controllers\TaskController;
 Route::get('/tasks', [TaskController::class, 'index']);
 Route::post('/tasks', [TaskController::class, 'store']);
 Route::put('/tasks/{id}/complete', [TaskController::class, 'complete']);
+Route::delete('/tasks/{id}', [TaskController::class, 'destroy']);
